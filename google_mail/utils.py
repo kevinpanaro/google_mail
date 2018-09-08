@@ -71,6 +71,7 @@ def get_sending_address(message_ids: list = None, service: object = service_user
     :param message_ids: message ids to for sending address
     :param service: service object
     :return: list of sending addresses
+    """
     sending_address = []
     if not isinstance(message_ids, list):
         message_ids = get_message_ids(service=service)
