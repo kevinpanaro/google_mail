@@ -166,6 +166,7 @@ def get_mailbox(mbox: str, parent: str = None, service: object = service_user())
     :param parent: parent label name
     :param service: service object to interact with google api
     :return: mailbox label
+    """
     if parent:
         mailbox = '/'.join((parent, mbox))
 
